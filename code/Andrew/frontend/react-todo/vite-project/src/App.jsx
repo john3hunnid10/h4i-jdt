@@ -1,14 +1,26 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './components/navbar/navbar'
+import Footer from './components/footer/footer.jsx'
+import { FaBolt } from "react-icons/fa6"
+import Task from './components/t'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      Todo.ai
+      <Navbar/>
+      <div className='seperator'></div>
+      <main className="main">
+        <section className="todo">
+          <Task name={"task 1"}/>
+          <Task name={"task 2"}/>
+          <Task name={"task 3"}/>
+        </section>
+      </main>
+      <FaBolt color="green"></FaBolt>
+      <Footer/>
     </>
   )
 }
