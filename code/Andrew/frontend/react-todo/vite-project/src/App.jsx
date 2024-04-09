@@ -3,7 +3,7 @@ import './App.css'
 import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer.jsx'
 import { FaBolt } from "react-icons/fa6"
-import Task from './components/t'
+import Task from './components/task/task'
 
 function App() {
   const [count, setCount] = useState(0)
